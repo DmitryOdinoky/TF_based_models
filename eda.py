@@ -12,7 +12,7 @@ import librosa
 
 TRAIN_CSV_PATH = "D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/DATASETS/FSD/FSDKaggle2018.meta/train_post_competition.csv"
 TRAIN_FILES_PATH = "D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/DATASETS/FSD/FSDKaggle2018.audio_train/"
-TRAIN_FILES_CLEANED = "D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/TF_based_models/clean"
+TRAIN_FILES_CLEANED = "D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/TF_based_models/TF_based_models/clean"
 
 def plot_signals(signals):
     fig, axes = plt.subplots(nrows=2, ncols=5, sharex=False,
@@ -174,10 +174,10 @@ plt.show()
 ## use envelope function and write "cleaned" files into directory
 
 
-if len(os.listdir(TRAIN_FILES_CLEANED)) == 0:
-    for f in tqdm(df.fname):
-        signal, rate = librosa.load(TRAIN_FILES_PATH + f, sr=16000)
-        mask = envelope(signal, rate, 0.0005)
-        wavfile.write(filename=TRAIN_FILES_CLEANED + f, rate=rate, data=signal[mask])
+# if len(os.listdir(TRAIN_FILES_CLEANED)) == 0:
+#     for f in tqdm(df.fname):
+#         signal, rate = librosa.load(TRAIN_FILES_PATH + f, sr=16000)
+#         mask = envelope(signal, rate, 0.0005)
+#         wavfile.write(filename=TRAIN_FILES_CLEANED + f, rate=rate, data=signal[mask])
 
 

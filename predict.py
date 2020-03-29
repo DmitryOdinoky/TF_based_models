@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score
 
 TESTING_CSV_PATH = 'D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/DATASETS/FSD/FSDKaggle2018.meta/test_post_competition_scoring_clips.csv'
 TESTING_FILES_PATH = 'D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/DATASETS/FSD/FSDKaggle2018.audio_test/'
-PREDICTIONS_CSV_PATH = 'D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/TF_based_models/'
+PREDICTIONS_CSV_PATH = 'D:/Sklad/Jan 19/RTU works/3_k_sem_1/Bakalaura Darbs/-=Python Code=-/TF_based_models/TF_based_models/'
 
 def build_predictions(audio_dir):
     y_true = []
